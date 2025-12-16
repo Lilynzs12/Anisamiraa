@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Academic Transcript</title>
+</head>
+
+<body style="background-color:#ffffff;font-family:Arial,sans-serif;">
+
+<!-- ================= banner ================= -->
+<table width="80%" align="center" cellpadding="0" cellspacing="0"
+style="margin:20px auto;border-collapse:collapse;background-color:#ffd6e8;border:6px solid #ff80ab; border-radius:10px;">
+
+    <!-- BANNER -->
+    <tr>
+        <td colspan="2" align="center" style="background-color:#ff9999; padding:15px;">
+            <img src="image/banner.jpg" width="800" alt="Banner" style="display:block;margin:auto;border-radius:5px;">
+        </td>
+    </tr>
+
+    <!-- NAVIGATION -->
+    <tr>
+        <td colspan="2" align="center" style="background-color:#ffc0de; padding:10px;">
+            <table cellpadding="10" cellspacing="0">
+                <tr>
+                    <td style="border:3px solid #ff4081; border-radius:5px;">
+                        <a href="#spm" style="text-decoration:none;color:black;font-weight:bold;">Secondary (SPM)</a>
+                    </td>
+                    <td style="border:3px solid #ff4081; border-radius:5px;">
+                        <a href="#stpm" style="text-decoration:none;color:black;font-weight:bold;">Pre-University (STPM)</a>
+                    </td>
+                    <td style="border:3px solid #ff4081; border-radius:5px;">
+                        <a href="#degree" style="text-decoration:none;color:black;font-weight:bold;">University (DEGREE)</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- CONTENT -->
+    <tr>
+ 
+<!-- SIDEBAR -->
+<td width="20%" style="background-color:#ffb3b3;border:2px solid #800020; padding:10px;">
+<img src="image/menupic.png" width="150" height="170" style="display:block;margin:auto;">
+<h3 align="center">MENU</h3>
+<table width="100%" cellpadding="5">
+<tr><td><a href="Home.html">Home</a></td></tr>
+<tr><td><a href="Aboutme.html">About Me</a></td></tr>
+<tr><td><a href="Achievement.html">Achievement</a></td></tr>
+<tr><td><a href="Academictranscript.html">Academic Transcript</a></td></tr>
+<tr><td><a href="Experiences.html">Experiences</a></td></tr>
+<tr><td><a href="Talent.html"><b>Talent</b></a></td></tr>
+</table>
+</td>
+
+
+
+<!-- MAIN LAYOUT -->
+<td width="80%" style="padding:15px; background-color:#ffe6f6;">
+
+
+<!-- SPM -->
+<a name="spm"></a>
+<h3 style="text-align:center; color:#800020;">SMK Iskandar Shah (SPM)</h3>
+<img src="image/smkis.jpg" width="300" height="220" style="display:block;margin:auto;border:6px solid #ff80ab; border-radius:5px;">
+<button onclick="openModal('image/spmresult.jpg')"
+style="padding:10px 25px;display:block;margin:10px auto;cursor:pointer; background-color:#ff99c8; border:none; border-radius:5px; font-weight:bold;">
+View Transcript
+</button>
+<hr style="border:1px solid #ff4081;">
+
+<!-- STPM -->
+<a name="stpm"></a>
+<h3 style="text-align:center; color:#800020;">SMK Iskandar Shah (STPM)</h3>
+<img src="image/smkis2.jpg" width="300" height="220" style="display:block;margin:auto;border:6px solid #ff80ab; border-radius:5px;">
+<button onclick="openModal('image/stpmresult.jpg')"
+style="padding:10px 25px;display:block;margin:10px auto;cursor:pointer; background-color:#ff99c8; border:none; border-radius:5px; font-weight:bold;">
+View Transcript
+</button>
+<hr style="border:1px solid #ff4081;">
+
+            
+<!-- DEGREE -->
+<a name="degree"></a>
+<h3 style="text-align:center; color:#800020;">Universiti Teknologi MARA (DEGREE)</h3>
+<table align="center" cellpadding="10" cellspacing="10">
+<tr>
+<td>
+<img src="image/uitm1.jpg" width="300" height="220"
+style="display:block;margin:auto;border:6px solid #ff80ab; border-radius:5px;">
+</td>
+<td>
+<img src="image/uitm2.jpg" width="300" height="220"
+style="display:block;margin:auto;border:6px solid #ff80ab; border-radius:5px;">
+<button onclick="openModal('image/degreeresult.jpg')"
+style="padding:10px 25px;display:block;margin:10px auto;cursor:pointer; background-color:#ff99c8; border:none; border-radius:5px; font-weight:bold;">
+
+
+View Transcript
+</button>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+
+
+
+   <!-- ================= FOOTER ================= -->
+<table width="80%" align="center" cellspacing="10" cellpadding="10" style="border-collapse:collapse;">
+<tr>
+<td align="center" style="background-color:#cc0000;color:white;padding:10px;">
+<p>
+© Anis Amira 2025 | All Rights Reserved<br>
+Recommended Browser: Chrome / Firefox | Resolution: 1366x768
+</p>
+</td>
+</tr>
+</table>
+
+
+<!-- MODAL -->
+<div id="transcriptModal"
+style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.7);">
+    <span onclick="closeModal()"
+    style="position:absolute;top:20px;right:35px;font-size:40px;color:white;cursor:pointer;">&times;</span>
+    <img id="modalImage" src=""
+    style="display:block;margin:80px auto;max-width:80%;max-height:80%;border:5px solid #800020; border-radius:5px;">
+</div>
+
+<script>
+function openModal(imgSrc){
+    document.getElementById("modalImage").src = imgSrc;
+    document.getElementById("transcriptModal").style.display = "block";
+}
+function closeModal(){
+    document.getElementById("transcriptModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
